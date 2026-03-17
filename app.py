@@ -8,7 +8,6 @@ from tensorflow.keras.models import load_model
 # Load trained model
 # ------------------------------
 model = load_model("model_vg1.keras", compile=False)
-
 # Build model graph
 model(np.zeros((1,128,128,3)))
 

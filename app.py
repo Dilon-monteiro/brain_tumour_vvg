@@ -7,6 +7,7 @@ from tensorflow.keras.models import load_model
 # Load trained model
 # ------------------------------
 model = load_model("model_vg1.keras", compile=False)
+
 # Build model graph
 model(np.zeros((1,128,128,3)))
 
@@ -72,9 +73,7 @@ if uploaded_file is not None:
     prediction = model.predict(img_array)
 
     predicted_class = class_labels[np.argmax(prediction)]
-
     confidence = np.max(prediction)
-
     st.subheader("Prediction")
 
     if predicted_class == "notumor":

@@ -1,5 +1,6 @@
 streamlit
 keras==2.10.0
+tensorflow
 numpy
 pillow
 h5py

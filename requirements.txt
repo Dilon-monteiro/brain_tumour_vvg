@@ -1,7 +1,6 @@
 streamlit
 
 tensorflow
-keras==2.15.0
 numpy
 pandas
 matplotlib
